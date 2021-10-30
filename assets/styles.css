@@ -1,0 +1,841 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{ 
+    display:grid;
+    grid-template-columns: auto 645px 35%;
+    min-width:730px;
+
+}
+
+/* ************************* */
+/* ******************************* */
+/* LEFT NAV BAR */
+/* ******************************* */
+/* ************************* */
+
+nav{
+    display:flex;
+    justify-content: end;
+    background-color:black;
+}
+
+#fixed{
+    position:fixed;
+    margin-right:40px;
+    margin-top: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* div in column with our main buttons of our navbar */
+
+#icones{
+    display:flex;
+    flex-direction: column;
+    gap:8px;  
+}
+
+.icones{
+    display:flex;
+    gap:18px;
+    color:rgb(214, 214, 214);
+    background:none;
+    border:none;
+    border-radius: 40px;
+    height:50px;
+    padding-top:8px;
+    padding-left:10px;
+    width:180px;
+}
+
+.icones:hover{
+    color:rgb(176, 8, 218);
+    cursor:pointer;
+    background-color:rgb(24, 24, 24)
+}
+
+#tweetsvg{
+    color:white;
+    background-color:rgb(176, 8, 218);
+    padding:16px;
+    border-radius: 100%;
+    width:30px;
+    position:absolute;
+    right:3px;
+    top:530px;
+}
+#tweetsvg:hover{
+    background-color:rgba(176, 8, 218, 0.842);
+    cursor:pointer;
+}
+
+
+.svg{
+    width: 32px;
+}
+
+.svgletters{
+    margin-top: 2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+#logo{
+    color:rgb(214, 214, 214);
+}
+#logo:hover{
+    background:none;
+    cursor:default;
+}
+
+#logo2:hover{
+    cursor:pointer;
+}
+
+#tweeter{
+    font-size:20px;
+    border-radius:30px;
+    width:240px;
+    height:58px;
+    color:white;
+    background-color:rgb(176,8,218);
+    border:none;
+}
+
+#tweeter:hover{
+    cursor:pointer;
+    background-color:rgb(157,8,218)
+}
+
+/* profile picture + name and tag for both tweets and text area, except pp used only for the
+left navbar */
+
+#pp{
+    width:50px;
+    border-radius: 200px;
+    margin-top:10px;
+    margin-left:10px;
+}
+
+#pseudo{
+    color:white;
+    margin-right:65px;
+    
+}
+
+/* usertag also used in our tweets */
+
+.usertag{
+    color:rgb(155, 155, 155);
+
+}
+
+#usertext{
+    margin-top:10px;
+    margin-left:10px;
+    font-size:18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#user{
+    display:flex;
+    margin-bottom: 30px;
+    background:none;
+    border-radius: 50px;
+    border:none;
+    width:230px;
+    height:70px;
+}
+
+#user:hover{
+    background-color:rgb(27, 27, 27);
+    cursor:pointer;
+    
+}
+
+/* ************************* */
+/* ************************************ */
+/* MAIN*/
+/* ************************************ */
+/* ************************* */
+
+main{
+    background-color:black;
+    border: 1px solid rgb(100, 100, 100);
+    border-top:none;
+    border-bottom:none;
+}
+
+/* the very top of our main*/
+
+#accueil{
+    width:100%;
+    height:50px;
+    position:sticky;
+    top:0;
+    background-color:#000000;
+    border-bottom:1px solid rgb(100, 100, 100);
+    display:flex;
+    z-index:1;
+}
+
+#textaccueil{
+    color:rgb(214, 214, 214);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:23px;
+    margin-top:7px;
+    margin-left:10px;
+}
+
+#textaccueil:hover{
+    cursor:pointer;
+}
+
+#svgaccueil{
+    color:rgb(214, 214, 214);
+    width:30px;
+    margin-left: 520px;
+}
+
+#svgaccueil:hover{
+    cursor:pointer;
+}
+
+/* text area before the very first displayed tweet*/
+
+#maintop{
+    width:100%;
+    height:160px;
+    display:flex;
+}
+
+/* also used as profile picture for every single tweet */
+
+#maintoppic{
+    height:30px;
+}
+
+.mainpp{
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+    margin-left:18px;
+    margin-top:13px;
+}
+.mainpp:hover{
+    filter:brightness(90%);
+    cursor:pointer;
+}
+
+#maintext{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:20px;
+    outline:none;
+    border:none;
+    background:none;
+    color:rgb(214, 214, 214);
+    height:80px;
+    margin-left:14px;
+    width: 550px;
+    margin-top:25px;
+    resize:none;
+    word-break:break-all;
+}
+::-webkit-scrollbar{
+    background: none;
+    display:none;
+}
+
+::-webkit-input-placeholder{
+    color:rgb(107, 107, 107);
+}
+
+#svginput{
+    color:rgb(176,8,218);
+    display:flex;
+    width:200px;
+    height:25px;
+    gap:16px;
+    margin-left:15px;
+    margin-top:15px;
+}
+.everysinglemainsvg:hover{
+    color:rgb(107, 0, 149);
+    cursor:pointer;
+}
+
+#svgdiffbutton{
+    display:flex;
+    gap: 245px;
+    border-top:1px solid rgb(100,100,100);
+}
+
+#tweetbuttonmain{
+    width:94px;
+    border-radius:100px;
+    border:none;
+    height:37px;
+    margin-top:8px;
+    background-color:rgb(176,8,218);
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#tweetbuttonmain:hover{
+    background-color:rgb(157,8,218);
+    cursor:pointer;
+}
+
+/* Tweets */
+
+#Tweets{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Tweets:hover{
+    cursor:pointer;
+}
+
+#Tweet1{
+    width:100%;
+    height:555px;
+    border-bottom:1px solid rgb(100, 100, 100);
+    border-top:1px solid rgb(100, 100, 100);
+}
+#Tweet1:hover{
+    background-color:rgb(19, 19, 19);
+}
+
+.retweet{
+    color:rgb(129, 129, 129);
+    display:flex;
+    gap:9px;
+    margin-top:10px;
+    margin-left:38px;
+}
+
+.retweettext{
+    color:rgb(129, 129, 129);
+    text-decoration: none;
+}
+
+.retweettext:hover{
+    text-decoration: underline;
+}
+
+.svgretweet{
+    width:14px;
+    margin-top:2px;
+}
+.usertweet{
+    display:flex;
+}
+.usertexttweet{
+    display:flex;
+    margin-top: 10px;
+    margin-left:7px;
+    font-size:17px;
+    gap:5px;
+}
+.pseudotweet{
+    color:white;
+    text-decoration: none;
+
+}
+
+.pseudotweet:hover{
+    text-decoration: underline white;
+}
+
+.usertagtweet{
+    color:rgb(155, 155, 155);
+}
+
+.usertagtweet:hover{
+    cursor: default;
+}
+
+.datetweet{
+    color:rgb(155, 155, 155);
+    text-decoration: none;
+
+}
+
+.point{
+    color: rgb(155, 155, 155); 
+}
+
+.datetweet:hover{
+    text-decoration: underline rgb(155, 155, 155);
+}
+
+.smalltexttweet{
+    color:rgb(200, 200, 200);
+    position: absolute;
+    margin-top:35px;
+    margin-left:76px;
+    width:550px;
+    word-break:break-word
+}
+
+.hashtag{
+    color:rgb(176, 8, 218);
+    text-decoration: none;
+    font-size: 20px;
+    margin-left:75px;
+}
+
+.hashtag:hover{
+    text-decoration: underline;
+}
+
+.reacttweet{
+    width:370px;
+    display:flex;
+    justify-content: space-between;
+    margin-left:75px;
+    margin-top:10px;
+}
+
+.svgundertweet{
+    width:23px;
+}
+
+.svgundertweet2{
+    width:23px;
+    color:rgb(129, 129, 129);
+}
+
+.svgundertweet2:hover{
+    color:rgb(176, 8, 218);
+}
+.react{
+    display:flex;
+    color:rgb(129, 129, 129);
+}
+
+.react:hover{
+    color:rgb(176, 8, 218);
+}
+
+
+/* image for the first tweet*/
+#piquenique{
+    width:540px;
+    margin-left:75px;
+    margin-top:10px;
+    border-radius: 24px;
+}
+
+#piquenique:hover{
+    filter:brightness(95%);
+    
+}
+
+
+
+#Tweet2{
+    width:100%;
+    height:465px;
+    border-bottom:1px solid rgb(100, 100, 100);
+}
+#Tweet2:hover{
+    background-color:rgb(19, 19, 19);
+}
+
+#charon{
+    width:540px;
+    margin-left:75px;
+    margin-top:30px;
+    border-radius: 24px;
+}
+
+#charon:hover{
+    filter:brightness(95%);
+    
+}
+
+#Tweet3{
+    width:100%;
+    height:437px;
+    border-bottom:1px solid rgb(100, 100, 100);
+}
+
+#Tweet3:hover{
+    background-color:rgb(19, 19, 19);
+}
+
+.reacttweet2{
+    width:370px;
+    display:flex;
+    justify-content: space-between;
+    margin-left:75px;
+    margin-top:339px;
+}
+
+#nothingness{
+    height:930px;
+    width:100%
+}
+
+#nothingness:hover{
+    cursor:default;
+}
+
+/* ************************* */
+/* *************************************** */
+/* ASIDE */
+/* *************************************** */
+/* ************************* */
+
+aside{
+    background-color:black;
+
+}
+
+#fixedright{
+    position:fixed;
+    margin-left:40px;
+    display:flex;
+    flex-direction:column;
+    height: 100%;
+    gap:19px;
+    width:358px;
+    margin-top:7px;
+}
+
+/* ************************* */
+/*searchbar*/
+/* ************************* */
+
+#search{
+    height: 45px;
+    border-radius:30px;
+    background-color:#a200ff83;
+    border: 0px;
+    outline: none;
+    color:white;
+    padding-left:55px;
+    padding-right:14px;
+    font-size: 19px;
+    outline:2px solid #a200ffd7;
+    min-height:45px;
+}
+
+#search:focus{
+    outline:2px solid #b535ffd7;
+}
+
+#magnifying{
+    color:#a200ffd7;
+    position:absolute;
+    width:27px;
+    margin-left:13px;
+    margin-top:9px;
+}
+/* ************************* */
+/* Buttons in the middle*/
+/* ************************* */
+
+#middlebuttonsright{
+    display:flex;
+    flex-direction: column;
+    border: 0px;
+}
+
+.hashtaglefttop{
+    font-size:18px;
+    margin-top:15px;
+    margin-left:12px;
+}
+
+.tweetslefttop{
+    color:rgb(225, 0, 255);
+    margin-left:12px;
+}
+
+
+#trends{
+    height:50px;
+    border: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color:#a200ff83;
+    color:rgb(223, 223, 223);
+    border: 2px solid #a200ffd7;
+    border-bottom: none;
+    font-size: 23px;
+}
+
+#trendsforyou{
+    margin-right:114px;
+}
+
+#hashtagtrends{
+    display:flex;
+    flex-direction: column;
+}
+.hashtagtrends2{
+    height:83px;
+    border: 0px;
+    background-color:#a200ff83;
+    color:rgb(223, 223, 223);
+    border-right: 2px solid #a200ffd7;
+    border-left: 2px solid #a200ffd7;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.hashtagtrends2:hover{
+    background-color:#a200ff8e;
+    cursor:pointer;
+}
+.seemore{
+    height:54px;
+    border: 0px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    background-color:#a200ff83;
+    color:rgb(206, 206, 206);
+    border: 2px solid #a200ffd7;
+    border-top: none;
+}
+
+.seemore2{
+    margin-right:265px;
+    font-size:17px;
+    color:rgb(225, 0, 255);
+}
+
+.seemore2:hover{
+    color:rgb(255, 255, 255);
+}
+.seemore:hover{
+    background-color:#a200ff8e;
+    cursor:pointer;
+}
+
+.lydlipsis{
+    color:rgb(225, 0, 255);
+    margin-left:310px;
+    margin-top:10px;
+    width:25px;
+    position:absolute;
+    border-radius:100%;
+    padding:3px;
+}
+.lydlipsis:hover{
+    background-color:rgba(225, 0, 255, 0.198);
+
+}
+/* ************************ */
+/* Buttons at the bottom*/
+/* ************************ */
+
+#bottombuttonsright{
+    display: flex;
+    flex-direction: column;
+}
+
+#whotofollow{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 54px;
+    border: 0px;
+    background-color:#a200ff83;
+    color:rgb(223, 223, 223);
+    border: 2px solid #a200ffd7;
+    border-bottom: none;
+    
+}
+
+#whotofollow2{
+    font-size:23px;
+    margin-right:205px;
+}
+#profiletofollow{
+    height:72px;
+    border: 0px;
+    background-color:#a200ff83;
+    color:rgb(223, 223, 223);
+    border-left: 2px solid #a200ffd7;
+    border-right: 2px solid #a200ffd7;
+    display:flex;
+}
+
+#profiletofollow:hover{
+    background-color:#a200ff8e;
+    cursor:pointer;
+}
+
+#pptofollow{
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-top:12px;
+}
+
+#pptofollow:hover{
+    filter: brightness(90%);
+}
+
+#usertextfollow{
+    font-size: 17px;
+    display:flex;
+    flex-direction: column;
+    margin:16px 12px;
+}
+
+#pseudofollow{
+    font-size: 17px;
+    color:white;
+    text-decoration: none;
+    margin-right:94px;
+}
+
+#pseudofollow:hover{
+    text-decoration: underline;
+}
+
+#tagfollow{
+    color:rgb(155, 155, 155);
+    font-size: 17px;
+}
+
+#buttonfollow{
+    margin-top: 17px;
+    margin-left:20px;
+    width: 94px;
+    border-radius: 100px;
+    border: none;
+    height: 37px;
+    background-color: rgb(176,8,218);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#followtext{
+    margin-top:10px
+}
+
+#buttonfollow:hover{
+    background-color:rgb(157,8,218);
+    color: white;
+}
+
+/* ************************** */
+/* ************************* */
+/*      RESPONSIVE PART      */
+/* ************************* */
+/* ************************** */
+
+@media only screen and (min-width:1440px){
+    #tweetsvg{
+        display:none;
+    }
+}
+
+@media only screen and (max-width:1440px){
+    .svgletters{
+        display:none;
+    }
+    .icones{
+        width:52px;
+        margin-left:300px;
+    }
+    #tweeter{
+        display:none;
+    }
+    #tweetsvg{
+        display:block;
+    }
+    
+    #usertext{
+        display:none;
+    }
+
+    #user{
+        margin-left:292px;
+        border-radius: 50px;
+        border:none;
+        width:70px;
+        height:70px;
+    }
+
+    #fixed{
+        margin-right:10px;
+    }
+}
+
+@media only screen and (max-height:692px){
+
+    #user{
+        position:absolute;
+        top:600px;}
+
+}
+
+@media only screen and (max-width:1121px){
+
+    #fixedright{
+        display:none;
+        
+    }
+
+    body{
+        display:grid;
+        grid-template-columns: auto 645px 20%;
+    }
+  
+}
+
+@media only screen and (max-width:915px){
+    body{
+        display:grid;
+        grid-template-columns: auto 645px 10%;
+    }
+}
+
+@media only screen and (max-width:802px){
+
+    body{
+        display:grid;
+        grid-template-columns: auto 645px 0%;
+    }
+}
+
+#twittertroll{display:none;}
+#audio{display:none;}
+
+/* *************** */
+/* Just for Fun */
+/* *************** */
+
+@media only screen and (max-width:577px){
+    #twittertroll{
+        display:block;
+        width:100%;
+        height:100%;
+        position:fixed;
+        z-index:3;
+    }
+    #audio{
+        display:block;
+        position:fixed;
+        z-index:3;
+        top:700px;
+        left:110px;
+
+    }
+
+
+
+
+}
