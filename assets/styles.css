@@ -838,7 +838,7 @@ aside{
     }
 
     #tweetsvg{
-        top:455px;
+        top:465px;
     }
 
     #user{
@@ -847,7 +847,7 @@ aside{
     }
 
 }
-@media only screen and (max-height:620px){
+@media only screen and (max-height:623px){
     
     #hiddenwhentoosmall{
         display:none;
