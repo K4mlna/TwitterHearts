@@ -39,6 +39,12 @@ nav{
     gap:8px;  
 }
 
+#hiddenwhentoosmall{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+}
+
 .icones{
     display:flex;
     gap:18px;
@@ -478,6 +484,34 @@ main{
     margin-top:340px;
 }
 
+.tweetlydlipsis{
+    color: rgb(225, 0, 255);
+    background: none;
+    width:25px;
+    margin-left:550px;
+    position:absolute;
+    border-radius:100%;
+    padding:5px;
+}
+
+.tweetlydlipsis:hover{
+    background-color: rgba(59, 59, 59, 0.74);
+}
+
+.tweetlydlipsis2{
+    color: rgb(225, 0, 255);
+    background: none;
+    width:25px;
+    margin-left:510px;
+    position:absolute;
+    border-radius:100%;
+    padding:5px;
+}
+
+.tweetlydlipsis2:hover{
+    background-color: rgba(59, 59, 59, 0.74);
+}
+
 #nothingness{
     height:930px;
     width:100%
@@ -574,6 +608,23 @@ aside{
 
 #trendsforyou{
     margin-right:114px;
+}
+
+#settings{
+    position:absolute;
+    right:15px;
+    top:77px;
+    width:30px;
+    color:rgb(225, 0, 255);
+    border:none;
+    border-radius:300px;
+    padding:3px;
+    background:none;
+}
+
+#settings:hover{
+    background-color: rgba(130, 0, 163, 0.74);
+    cursor:pointer;
 }
 
 #hashtagtrends{
@@ -729,6 +780,41 @@ aside{
     color: white;
 }
 
+#links{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left:15px;
+    margin-top:10px;
+    gap:10px;
+    width:320px;
+}
+
+.links2{
+    color:rgb(176,8,218);
+    text-decoration: none;
+    font-size:18px;
+}
+
+.links2:visited{
+    color:rgb(176,8,218);
+    text-decoration: none;
+}
+
+.links2:hover{
+    text-decoration: underline;
+}
+
+#nexttolinks{
+    color:rgb(176,8,218);
+}
+
+#ellipsis{
+    color: rgb(176,8,218);
+    font-size:10px;
+}
+
+
+
 /* ************************** */
 /* ************************* */
 /*      RESPONSIVE PART      */
@@ -740,6 +826,47 @@ aside{
         display:none;
     }
 }
+
+/* ************************* */
+/* left navbar adaptation for each height */
+/* ************************* */
+
+@media only screen and (max-height:692px){
+
+    #icones{
+        gap:0px;
+    }
+
+    #tweetsvg{
+        top:455px;
+    }
+
+    #user{
+        position:absolute;
+        bottom:5px;
+    }
+
+}
+@media only screen and (max-height:620px){
+    
+    #hiddenwhentoosmall{
+        display:none;
+    }
+
+    #tweetsvg{
+        top:355px;
+    }
+}
+
+@media only screen and (max-height:517px){
+    #user{
+        position:absolute;
+        top:413px;
+    }
+}
+/* ************************* */
+/* left navbar adaptation for each height - END */
+/* ************************* */
 
 @media only screen and (max-width:1440px){
 
@@ -777,14 +904,6 @@ aside{
     #fixed{
         margin-right:10px;
     }
-}
-
-@media only screen and (max-height:692px){
-
-    #user{
-        position:absolute;
-        top:600px;}
-
 }
 
 @media only screen and (max-width:1135px){
@@ -843,7 +962,15 @@ aside{
         top:12px;
     }
 
+    .tweetlydlipsis2{
+        position:absolute;
+        right:10px;
+    }
 
+    .tweetlydlipsis{
+        position:absolute;
+        right:10px;
+    }
 
     /* Tweet part */
 

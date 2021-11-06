@@ -8,6 +8,7 @@
         <title>Twitter</title>
         <link href="assets/styles.css" rel="stylesheet">
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="favicon.ico">
     </head>
   
   <body>
@@ -30,13 +31,19 @@
                     </button><button class=icones>
                     <svg class=svg viewBox="0 0 24 24" fill="currentcolor" aria-hidden="true" class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"><g><path d="M19.25 3.018H4.75C3.233 3.018 2 4.252 2 5.77v12.495c0 1.518 1.233 2.753 2.75 2.753h14.5c1.517 0 2.75-1.235 2.75-2.753V5.77c0-1.518-1.233-2.752-2.75-2.752zm-14.5 1.5h14.5c.69 0 1.25.56 1.25 1.25v.714l-8.05 5.367c-.273.18-.626.182-.9-.002L3.5 6.482v-.714c0-.69.56-1.25 1.25-1.25zm14.5 14.998H4.75c-.69 0-1.25-.56-1.25-1.25V8.24l7.24 4.83c.383.256.822.384 1.26.384.44 0 .877-.128 1.26-.383l7.24-4.83v10.022c0 .69-.56 1.25-1.25 1.25z"></path></g></svg>
                     <span class=svgletters>Messages</span>
-                    </button><button class=icones>
-                    <svg class=svg viewBox="0 0 24 24" fill="currentcolor" aria-hidden="true" class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"><g><path d="M19.9 23.5c-.157 0-.312-.05-.442-.144L12 17.928l-7.458 5.43c-.228.164-.53.19-.782.06-.25-.127-.41-.385-.41-.667V5.6c0-1.24 1.01-2.25 2.25-2.25h12.798c1.24 0 2.25 1.01 2.25 2.25v17.15c0 .282-.158.54-.41.668-.106.055-.223.082-.34.082zM12 16.25c.155 0 .31.048.44.144l6.71 4.883V5.6c0-.412-.337-.75-.75-.75H5.6c-.413 0-.75.338-.75.75v15.677l6.71-4.883c.13-.096.285-.144.44-.144z"></path></g></svg>
-                    <span class=svgletters>Signets</span> 
-                    </button><button class=icones>
-                    <svg class=svg viewBox="0 0 24 24" fill="currentcolor" aria-hidden="true" class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"><g><path d="M19.75 22H4.25C3.01 22 2 20.99 2 19.75V4.25C2 3.01 3.01 2 4.25 2h15.5C20.99 2 22 3.01 22 4.25v15.5c0 1.24-1.01 2.25-2.25 2.25zM4.25 3.5c-.414 0-.75.337-.75.75v15.5c0 .413.336.75.75.75h15.5c.414 0 .75-.337.75-.75V4.25c0-.413-.336-.75-.75-.75H4.25z"></path><path d="M17 8.64H7c-.414 0-.75-.337-.75-.75s.336-.75.75-.75h10c.414 0 .75.335.75.75s-.336.75-.75.75zm0 4.11H7c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h10c.414 0 .75.336.75.75s-.336.75-.75.75zm-5 4.11H7c-.414 0-.75-.335-.75-.75s.336-.75.75-.75h5c.414 0 .75.337.75.75s-.336.75-.75.75z"></path></g></svg>
-                    <span class=svgletters>Listes</span> 
-                    </button><button class=icones>
+                    </button>
+
+                    <div id=hiddenwhentoosmall>
+                        <button class=icones>
+                            <svg class=svg viewBox="0 0 24 24" fill="currentcolor" aria-hidden="true" class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"><g><path d="M19.9 23.5c-.157 0-.312-.05-.442-.144L12 17.928l-7.458 5.43c-.228.164-.53.19-.782.06-.25-.127-.41-.385-.41-.667V5.6c0-1.24 1.01-2.25 2.25-2.25h12.798c1.24 0 2.25 1.01 2.25 2.25v17.15c0 .282-.158.54-.41.668-.106.055-.223.082-.34.082zM12 16.25c.155 0 .31.048.44.144l6.71 4.883V5.6c0-.412-.337-.75-.75-.75H5.6c-.413 0-.75.338-.75.75v15.677l6.71-4.883c.13-.096.285-.144.44-.144z"></path></g></svg>
+                            <span class=svgletters>Signets</span> 
+                        </button>
+                        <button class=icones>
+                            <svg class=svg viewBox="0 0 24 24" fill="currentcolor" aria-hidden="true" class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"><g><path d="M19.75 22H4.25C3.01 22 2 20.99 2 19.75V4.25C2 3.01 3.01 2 4.25 2h15.5C20.99 2 22 3.01 22 4.25v15.5c0 1.24-1.01 2.25-2.25 2.25zM4.25 3.5c-.414 0-.75.337-.75.75v15.5c0 .413.336.75.75.75h15.5c.414 0 .75-.337.75-.75V4.25c0-.413-.336-.75-.75-.75H4.25z"></path><path d="M17 8.64H7c-.414 0-.75-.337-.75-.75s.336-.75.75-.75h10c.414 0 .75.335.75.75s-.336.75-.75.75zm0 4.11H7c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h10c.414 0 .75.336.75.75s-.336.75-.75.75zm-5 4.11H7c-.414 0-.75-.335-.75-.75s.336-.75.75-.75h5c.414 0 .75.337.75.75s-.336.75-.75.75z"></path></g></svg>
+                            <span class=svgletters>Listes</span> 
+                    </button></div>
+
+                    <button class=icones>
                     <svg class=svg viewBox="0 0 24 24" fill="currentcolor" aria-hidden="true" class="r-1fmj7o5 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"><g><path d="M12 11.816c1.355 0 2.872-.15 3.84-1.256.814-.93 1.078-2.368.806-4.392-.38-2.825-2.117-4.512-4.646-4.512S7.734 3.343 7.354 6.17c-.272 2.022-.008 3.46.806 4.39.968 1.107 2.485 1.256 3.84 1.256zM8.84 6.368c.162-1.2.787-3.212 3.16-3.212s2.998 2.013 3.16 3.212c.207 1.55.057 2.627-.45 3.205-.455.52-1.266.743-2.71.743s-2.255-.223-2.71-.743c-.507-.578-.657-1.656-.45-3.205zm11.44 12.868c-.877-3.526-4.282-5.99-8.28-5.99s-7.403 2.464-8.28 5.99c-.172.692-.028 1.4.395 1.94.408.52 1.04.82 1.733.82h12.304c.693 0 1.325-.3 1.733-.82.424-.54.567-1.247.394-1.94zm-1.576 1.016c-.126.16-.316.246-.552.246H5.848c-.235 0-.426-.085-.552-.246-.137-.174-.18-.412-.12-.654.71-2.855 3.517-4.85 6.824-4.85s6.114 1.994 6.824 4.85c.06.242.017.48-.12.654z"></path></g></svg>
                     <span class=svgletters>Profil</span>
                     </button><button class=icones>
@@ -87,7 +94,7 @@
                     <li class=retweet>
                         <svg class=svgretweet viewBox="0 0 24 24" fill="currentcolor" aria-hidden="true" class="r-9ilb82 r-4qtqp9 r-yyyyoo r-10ptun7 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1janqcz"><g><path d="M23.615 15.477c-.47-.47-1.23-.47-1.697 0l-1.326 1.326V7.4c0-2.178-1.772-3.95-3.95-3.95h-5.2c-.663 0-1.2.538-1.2 1.2s.537 1.2 1.2 1.2h5.2c.854 0 1.55.695 1.55 1.55v9.403l-1.326-1.326c-.47-.47-1.23-.47-1.697 0s-.47 1.23 0 1.697l3.374 3.375c.234.233.542.35.85.35s.613-.116.848-.35l3.375-3.376c.467-.47.467-1.23-.002-1.697zM12.562 18.5h-5.2c-.854 0-1.55-.695-1.55-1.55V7.547l1.326 1.326c.234.235.542.352.848.352s.614-.117.85-.352c.468-.47.468-1.23 0-1.697L5.46 3.8c-.47-.468-1.23-.468-1.697 0L.388 7.177c-.47.47-.47 1.23 0 1.697s1.23.47 1.697 0L3.41 7.547v9.403c0 2.178 1.773 3.95 3.95 3.95h5.2c.664 0 1.2-.538 1.2-1.2s-.535-1.2-1.198-1.2z"></path></g></svg>
                         <a href=https://pandorahearts.fandom.com/fr/wiki/Alice class=retweettext>Alice Baskerville a retweeté</a>
-                        
+                        <svg viewBox="0 0 24 24" fill="currentcolor" class=tweetlydlipsis aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"><g><circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle></g></svg> 
                     </li>
                     <li class=usertweet>
                         <a href= "https://pandorahearts.fandom.com/fr/wiki/Oz"><img class=mainpp src=assets\img\ozpp.png></a>
@@ -127,7 +134,7 @@
                 </ul>
 
 
-            <ul id=Tweet2>    
+            <ul id=Tweet2>
 
                 <li class=usertweet>
                     <a href= "https://pandorahearts.fandom.com/fr/wiki/Xerxes_Break"><img class=mainpp src=assets\img\PP.png></a>
@@ -136,6 +143,7 @@
                             <p class=usertagtweet>@XerxesBreak</p>
                             <p class=point>. </p>
                             <a href= https://fr.wikipedia.org/wiki/21_octobre class=datetweet>Oct 21</a>
+                            <svg viewBox="0 0 24 24" fill="currentcolor" class=tweetlydlipsis2 aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"><g><circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle></g></svg>
                     </div>
                     <p class=smalltexttweet>Il semblerait qu'un goinfre se soit immiscé dans ce superbe cliché de miss Charon et moi</p>
                 </li>
@@ -170,6 +178,7 @@
                                 <p class=usertagtweet>@GilbertNightray</p>
                                 <p class=point>. </p>
                                 <a href= https://fr.wikipedia.org/wiki/16_octobre class=datetweet>Oct 16</a>
+                                <svg viewBox="0 0 24 24" fill="currentcolor" class=tweetlydlipsis2 aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"><g><circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle></g></svg>
                         </div>
                         <p class=smalltexttweet>Cette semaine comme toutes les autres je tenais à vous faire part de mes problèmes quotidiens: il s'agit aujourd'hui d'expier mes fautes en avouant mes péchés en public. je ne suis pas certain d'avoir repassé correctement les vêtements du maître, il me semble que l'une des 37 vestes que j'ai repassé ce dimanche soir était encore légèrement froissée au niveau de la manche gauche. Je suis vraiment un serviteur irrécupérable et indigne d'un tel maître c'est pourquoi pour me faire pardonner j'ai décidé d'expliquer brièvement (car il serait si long de citer toutes les qualités de mon maître) mon respect, mon admiration et ma dévotion pour mon bien aimé maître Oz Vessalius. C'est pourquoi j'ai décidé de vous faire un top 3 des raisons pour lesquelles mon maître est le meilleur de tous les maîtres. Numéro 3, Oz est vraiment charismatique. Je ne ressens pas le besoin d'argumenter sur ce point car tout le monde est inéluctablement d'accord avec moi. Numéro 2: Oz est intelligent et vraiment mature pour son âge. Là encore je ne ressens pas le besoin d'apporter des détails tant c'est un point qui saute aux yeux. Numéro 1: Oz est Oz et rien que pour cela je pense que c'est le meilleur maître de l'univers. Voilà c'est tout pour moi et je vous dit à la semaine prochaine.</p>
                     </li>
@@ -203,9 +212,15 @@
             <section id=fixedright>
                 <input type="search" id="search" placeholder="Quoi de neuf ?">
                 <svg id=magnifying viewBox="0 0 24 24" fill="currentcolor" aria-hidden="true" class="r-9ilb82 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                <button id=settings>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentcolor" class="r-54znze r-4qtqp9 r-yyyyoo r-z80fyv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03"><g><path d="M12 8.21c-2.09 0-3.79 1.7-3.79 3.79s1.7 3.79 3.79 3.79 3.79-1.7 3.79-3.79-1.7-3.79-3.79-3.79zm0 6.08c-1.262 0-2.29-1.026-2.29-2.29S10.74 9.71 12 9.71s2.29 1.026 2.29 2.29-1.028 2.29-2.29 2.29z"></path><path d="M12.36 22.375h-.722c-1.183 0-2.154-.888-2.262-2.064l-.014-.147c-.025-.287-.207-.533-.472-.644-.286-.12-.582-.065-.798.115l-.116.097c-.868.725-2.253.663-3.06-.14l-.51-.51c-.836-.84-.896-2.154-.14-3.06l.098-.118c.186-.222.23-.523.122-.787-.11-.272-.358-.454-.646-.48l-.15-.014c-1.18-.107-2.067-1.08-2.067-2.262v-.722c0-1.183.888-2.154 2.064-2.262l.156-.014c.285-.025.53-.207.642-.473.11-.27.065-.573-.12-.795l-.094-.116c-.757-.908-.698-2.223.137-3.06l.512-.512c.804-.804 2.188-.865 3.06-.14l.116.098c.218.184.528.23.79.122.27-.112.452-.358.477-.643l.014-.153c.107-1.18 1.08-2.066 2.262-2.066h.722c1.183 0 2.154.888 2.262 2.064l.014.156c.025.285.206.53.472.64.277.117.58.062.794-.117l.12-.102c.867-.723 2.254-.662 3.06.14l.51.512c.836.838.896 2.153.14 3.06l-.1.118c-.188.22-.234.522-.123.788.112.27.36.45.646.478l.152.014c1.18.107 2.067 1.08 2.067 2.262v.723c0 1.183-.888 2.154-2.064 2.262l-.155.014c-.284.024-.53.205-.64.47-.113.272-.067.574.117.795l.1.12c.756.905.696 2.22-.14 3.06l-.51.51c-.807.804-2.19.864-3.06.14l-.115-.096c-.217-.183-.53-.23-.79-.122-.273.114-.455.36-.48.646l-.014.15c-.107 1.173-1.08 2.06-2.262 2.06zm-3.773-4.42c.3 0 .593.06.87.175.79.328 1.324 1.054 1.4 1.896l.014.147c.037.4.367.7.77.7h.722c.4 0 .73-.3.768-.7l.014-.148c.076-.842.61-1.567 1.392-1.892.793-.33 1.696-.182 2.333.35l.113.094c.178.148.366.18.493.18.206 0 .4-.08.546-.227l.51-.51c.284-.284.305-.73.048-1.038l-.1-.12c-.542-.65-.677-1.54-.352-2.323.326-.79 1.052-1.32 1.894-1.397l.155-.014c.397-.037.7-.367.7-.77v-.722c0-.4-.303-.73-.702-.768l-.152-.014c-.846-.078-1.57-.61-1.895-1.393-.326-.788-.19-1.678.353-2.327l.1-.118c.257-.31.236-.756-.048-1.04l-.51-.51c-.146-.147-.34-.227-.546-.227-.127 0-.315.032-.492.18l-.12.1c-.634.528-1.55.67-2.322.354-.788-.327-1.32-1.052-1.397-1.896l-.014-.155c-.035-.397-.365-.7-.767-.7h-.723c-.4 0-.73.303-.768.702l-.014.152c-.076.843-.608 1.568-1.39 1.893-.787.326-1.693.183-2.33-.35l-.118-.096c-.18-.15-.368-.18-.495-.18-.206 0-.4.08-.546.226l-.512.51c-.282.284-.303.73-.046 1.038l.1.118c.54.653.677 1.544.352 2.325-.327.788-1.052 1.32-1.895 1.397l-.156.014c-.397.037-.7.367-.7.77v.722c0 .4.303.73.702.768l.15.014c.848.078 1.573.612 1.897 1.396.325.786.19 1.675-.353 2.325l-.096.115c-.26.31-.238.756.046 1.04l.51.51c.146.147.34.227.546.227.127 0 .315-.03.492-.18l.116-.096c.406-.336.923-.524 1.453-.524z"></path></g></svg>
+                </button>
 
                 <div id=middlebuttonsright>
-                    <button id=trends><p id=trendsforyou>Tendances pour vous</p></button>
+                    <button id=trends>
+                        <p id=trendsforyou>Tendances pour vous</p>
+                    </button>
+
                     <div id=hashtagtrends>
                     <button class=hashtagtrends2>
                         <p class=hashtaglefttop>#PandoraHearts</p>
@@ -247,6 +262,14 @@
                         <div id=buttonfollow><p id=followtext>Suivre</p></div>
                     </button>
                     <button class=seemore><p class=seemore2>voir plus</p></button>
+                    <div id=links>
+                        <a class=links2 href=https://youtu.be/7VS2W7FFUn8>opening</a>
+                        <a class=links2 href=https://youtu.be/5wTK6_kaPvU>strange melody</a>
+                        <a class=links2 href=https://youtu.be/S6edUVTX68o>alone</a>
+                        <a class=links2 href=https://youtu.be/Fsese8D-lDk>bloody rabbit</a>
+                        <a class=links2 href=https://youtu.be/6hkYa-0-TY4>turn <i id=ellipsis class="fas fa-ellipsis-h"></i></a>
+                        <p id=nexttolinks>© 2021 Twitter, Inc.</p>
+                    </div>
                 </div>
             </section>
         </aside>   
