@@ -1070,4 +1070,32 @@ aside{
     .bigtexttweet{width:77%}
 }
 
-/* manual resize for text adaptive tweet height */
+/* if the screen's height is too small then it will hide some of the trends under searchbar*/
+
+@media only screen and (max-height:852px){
+
+    #promare{
+        display:none;
+    }
+}
+
+@media only screen and (max-height:778px){
+
+    #gantz{
+        display:none;
+    }
+}
+
+@media only screen and (max-height:690px){
+
+    #jepreferecetwitter{
+        display:none;
+    }
+}
+
+@media only screen and (max-height:603px){
+
+    #wherearejackandlacie{
+        display:none;
+    }
+}
