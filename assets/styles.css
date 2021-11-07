@@ -386,7 +386,7 @@ main{
     margin-top:35px;
     margin-left:76px;
     width:550px;
-    word-break:break-word
+    word-break:break-word;
 }
 
 .hashtag{
@@ -468,7 +468,7 @@ main{
 
 #Tweet3{
     width:100%;
-    height:437px;
+    height:449px;
     border-bottom:1px solid rgb(100, 100, 100);
 }
 
@@ -476,12 +476,21 @@ main{
     background-color:rgb(19, 19, 19);
 }
 
-.reacttweet2{
-    width:370px;
+.usertexttweet2{
     display:flex;
-    justify-content: space-between;
-    margin-left:75px;
-    margin-top:340px;
+    margin-top: 16px;
+    margin-left:7px;
+    font-size:17px;
+    gap:5px;
+}
+
+.bigtexttweet{
+    color:rgb(200, 200, 200);
+    word-break:keep-all;
+    margin-left:6px;
+    margin-top:10px;
+    text-align:justify;
+    width:95%
 }
 
 .tweetlydlipsis{
@@ -998,6 +1007,10 @@ aside{
         height:auto;
     }
 
+    #Tweet3{
+        height:auto;
+    }
+
     .reacttweet{
         margin-bottom:10px;
     }
@@ -1006,17 +1019,18 @@ aside{
         width:auto;
     }
 
-    
+    .bigtexttweet{width:83%}
 
 }
 /*************************** */
-/*manual resize for pic, text area and buttons under tweets with svg*/
+/*manual resize for pic, text area, buttons under tweets with svg, text for third tweet*/
 /*************************** */
 
 @media only screen and (max-width:700px){
     #maintext{
         width:500px;
     }
+
 
 }
 @media only screen and (max-width:660px){
@@ -1030,6 +1044,8 @@ aside{
           width:72%;
           margin-right:120px;
     }
+
+    .bigtexttweet{width:80%}    
 }
 @media only screen and (max-width:610px){
     #maintext{
@@ -1050,149 +1066,8 @@ aside{
     .svgundertweet2{
         margin-right:30px;
     }
+
+    .bigtexttweet{width:77%}
 }
 
-/* manual resize for text adaptative tweet height */
-
-@media only screen and (max-width:696px){
-    #Tweet3{
-        height:450px;
-    }
-    .reacttweet2{
-        margin-top: 355px;
-    }
-}
-
-@media only screen and (max-width:672px){
-    #Tweet3{
-        height:470px;
-    }
-
-    .reacttweet2{
-        margin-top: 375px;
-    }
- 
-}
-
-@media only screen and (max-width:646px){
-
-    #Tweet3{
-        height:490px;
-    }
-    .reacttweet2{
-        margin-top: 395px;
-    }
- 
-}
-
-@media only screen and (max-width:623px){
-
-    #Tweet3{
-        height:510px;
-    }
-    .reacttweet2{
-        margin-top: 415px;
-    }
- 
-}
-
-@media only screen and (max-width:596px){
-
-    #Tweet3{
-        height:530px;
-    }
-    .reacttweet2{
-        margin-top: 435px;
-    }
- 
-}
-
-@media only screen and (max-width:585px){
-
-    #Tweet3{
-        height:550px;
-    }
-    .reacttweet2{
-        margin-top: 457px;
-    }
- 
-}
-
-@media only screen and (max-width:569px){
-
-    #Tweet3{
-        height:573px;
-    }
-    .reacttweet2{
-        margin-top: 480px;
-    }
- 
-}
-
-@media only screen and (max-width:555px){
-
-    #Tweet3{
-        height:597px;
-    }
-    .reacttweet2{
-        margin-top: 505px;
-    }
- 
-}
-
-@media only screen and (max-width:529px){
-
-    #Tweet3{
-        height:616px;
-    }
-    .reacttweet2{
-        margin-top: 523px;
-    }
- 
-}
-
-@media only screen and (max-width:515px){
-
-    #Tweet3{
-        height:637px;
-    }
-    .reacttweet2{
-        margin-top: 542px;
-    }
- 
-}
-
-@media only screen and (max-width:512px){
-
-    #Tweet3{
-        height:660px;
-    }
-    .reacttweet2{
-        margin-top: 568px;
-    }
- 
-}
-
-@media only screen and (max-width:492px){
-
-    #Tweet3{
-        height:686px;
-    }
-    .reacttweet2{
-        margin-top: 589px;
-    }
- 
-}
-
-@media only screen and (max-width:486px){
-
-    #Tweet3{
-        height:703px;
-    }
-    .reacttweet2{
-        margin-top: 610px;
-    }
- 
-}
-
-
+/* manual resize for text adaptive tweet height */
