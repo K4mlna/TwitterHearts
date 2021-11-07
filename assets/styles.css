@@ -6,6 +6,7 @@
 body{ 
     display:grid;
     grid-template-columns: auto 645px 35%;
+    background-color: black;
 
 }
 
@@ -1033,9 +1034,10 @@ aside{
 
 
 }
+
 @media only screen and (max-width:660px){
     #maintext{
-        width:440px;
+        width:470px;
     }
     #piquenique{
         width: 72%;
@@ -1047,14 +1049,23 @@ aside{
 
     .bigtexttweet{width:80%}    
 }
+
+@media only screen and (max-width:636px){
+    #maintext{
+        width:440px;
+    }
+
+
+}
+
 @media only screen and (max-width:610px){
     #maintext{
-        width:400px;
+        width:410px;
     }
 }
 @media only screen and (max-width:580px){
     #maintext{
-        width:340px;
+        width:370px;
     }
     #piquenique{
         width: 69%;
@@ -1068,6 +1079,22 @@ aside{
     }
 
     .bigtexttweet{width:77%}
+}
+
+@media only screen and (max-width:539px){
+    #maintext{
+        width:340px;
+    }
+
+
+}
+
+@media only screen and (max-width:508px){
+    #maintext{
+        width:300px;
+    }
+
+
 }
 
 /* if the screen's height is too small then it will hide some of the trends under searchbar*/
