@@ -1,5 +1,7 @@
 # TwitterHearts
 
+![Example](./assets/img/screenreadme.png)
+
 ## Summary
 
 - **Genesis :** School Project
