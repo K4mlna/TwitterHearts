@@ -1,6 +1,6 @@
 # TwitterHearts
 
-![Example](./assets/img/screenreadme.png)
+![Example](./assets/img/screenreadme.PNG)
 
 ## Summary
 
